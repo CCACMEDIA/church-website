@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body{
+    background: linear-gradient(to right, #8ab4df, #24425f);
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+div{
+    color: white;
+}
+div li{
+    color: white;
+}
+/* General Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Underline Animation */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Hover Effects */
+nav ul li a:hover {
+    color: whtie; /* Change text color */
+    transform: translateY(-5px); /* Slight bounce effect */
+    text-shadow: 0 0 10px white, 0 0 20px black; /* Glow effect */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expanding underline */
+}
+
+a{
+    color: white;
+    font-size: larger;
+    
+}
