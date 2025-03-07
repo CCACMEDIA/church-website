@@ -110,3 +110,28 @@ img {
         margin: 10px 0;
     }
 }
+/* Fix navigation layout on small screens */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* Reduce text size for better fit */
+  h1 {
+    font-size: 30px; /* Adjust size */
+    text-align: center;
+  }
+
+  /* Reduce spacing */
+  body {
+    padding: 10px;
+  }
+}
+
