@@ -1,37 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
+body{
+    background: linear-gradient(to right, #004080, #002d5a);
+    
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-/* Background Gradient */
-body {
-    background: linear-gradient(to right, #004080, #002d5a);
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Headings */
-h1 {
+h1{
     color: white;
     text-align: center;
-    
+    font-size: 50px;
 }
-
-/* General Text & Links */
-div, div li, a {
+div{
     color: white;
 }
-
-a {
-    font-size: larger;
-    text-decoration: none;
+div li{
+    color: white;
 }
-
-/* ========== NAVIGATION ========== */
+/* General Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -55,7 +44,7 @@ nav ul li a {
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-/* Underline Hover Animation */
+/* Underline Animation */
 nav ul li a::after {
     content: "";
     position: absolute;
@@ -70,7 +59,7 @@ nav ul li a::after {
 
 /* Hover Effects */
 nav ul li a:hover {
-    color: white; /* Fixed typo */
+    color: whtie; /* Change text color */
     transform: translateY(-5px); /* Slight bounce effect */
     text-shadow: 0 0 10px white, 0 0 20px black; /* Glow effect */
 }
@@ -79,59 +68,95 @@ nav ul li a:hover::after {
     width: 100%; /* Expanding underline */
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
-
-/* Ensure images and content fit */
-img {
-    max-width: 100%;
-    height: auto;
+a{
+    color: white;
+    font-size: larger;
+    
 }
-
-/* Adjust layout for small screens */
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Make navigation stack vertically */
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-/* Fix navigation layout on small screens */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
+/* General Reset */
+* {
+    margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-  nav ul li {
-    display: block;
-    margin: 5px 0;
-  }
-
-  /* Reduce text size for better fit */
-  h1 {
-    font-size: 30px; /* Adjust size */
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #004080, #002d5a);
+    color: white;
     text-align: center;
-  }
+}
 
-  /* Reduce spacing */
-  body {
-    padding: 10px;
-  }
+/* Navigation Styling */
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0db4f;
+    text-shadow: 0 0 5px white;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #f0db4f;
+    color: #002d5a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
 }
 
